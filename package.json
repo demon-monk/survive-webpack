@@ -13,7 +13,8 @@
     "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|mdx|graphql|vue)\"",
     "format": "npm run prettier --write",
     "validate": "npm run lint && npm run prettier --list-different",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "build": "webpack --mode production"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
