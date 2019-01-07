@@ -16,10 +16,10 @@ module.exports = {
     }),
   ],
   devServer: {
-    stats: 'errors-only',
+    // stats: 'errors-only',
     host: process.env.HOST,
     port: process.env.PORT,
-    open: true,
+    open: false,
     overlay: true, // show error msg on the top of you developing page
   },
 }

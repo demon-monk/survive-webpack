@@ -14,7 +14,7 @@
     "format": "npm run prettier --write",
     "validate": "npm run lint && npm run prettier --list-different",
     "precommit": "lint-staged",
-    "start": "webpack-dev-server --mode development",
+    "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --mode development\"",
     "build": "webpack --mode production"
   },
   "devDependencies": {
@@ -26,6 +26,7 @@
     "html-webpack-plugin": "^3.2.0",
     "husky": "^1.2.0",
     "lint-staged": "^8.1.0",
+    "nodemon": "^1.18.9",
     "prettier": "^1.15.3",
     "webpack": "^4.28.3",
     "webpack-cli": "^3.2.0",
